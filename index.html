@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Emiels Github Page</title>
+    <meta name="theme-color" content="#2196f3" />
+    <link type="manifest" href="manifest.json" />
+
+    <script>
+        window.onload = function () {
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/sw.js');
+            }
+        }    
+    </script>
+</head>
