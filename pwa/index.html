@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Emiel's Github Page</title>
+    <meta name="theme-color" content="#2196f3" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="images/dino-xxxhdpi.png" sizes="192x192" />
+
+    <style>
+        body {
+            background-color: honeydew;
+            color: forestgreen;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, system-ui;
+            font-size: 28pt;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            margin: 0;
+            min-height: 100vh;
+        }
+    </style>
+
+    <script>
+        window.onload = function () {
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(() => console.log('Service worker registration complete!'));
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <img src="images/dino-512.png" alt="404 - Dino not found" />
+    <p>Hello World!</p>
+</body>

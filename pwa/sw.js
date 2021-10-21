@@ -21,7 +21,7 @@ self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open(currentCacheVersion).then((cache) => {
             return cache.addAll([
-                './images/xxxhdpi.png',
+                './images/dino-xxxhdpi.png',
                 './',
                 './index.html',
             ]);

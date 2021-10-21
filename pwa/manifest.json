@@ -1,34 +1,33 @@
 {
-    "name": "Emiel's Github Page",
-    "short_name": "Emiel@GH",
-    "theme_color": "#2196f3",
-    "background_color": "#2196f3",
+    "name": "Emiel's Github PWA Demo",
+    "short_name": "Emiel@GH PWA",
+    "start_url": "./index.html",
+    "theme_color": "forrestgreen",
+    "background_color": "honeydew",
     "display": "standalone",
-    "scope": "/",
-    "start_url": "/",
     "icons": [
         {
-          "src": "images/hdpi.png",
+          "src": "images/dino-hdpi.png",
           "sizes": "72x72",
           "type": "image/png"
         },
         {
-          "src": "images/xhdpi.png",
+          "src": "images/dino-xhdpi.png",
           "sizes": "96x96",
           "type": "image/png"
         },
         {
-          "src": "images/xxhdpi.png",
+          "src": "images/dino-xxhdpi.png",
           "sizes": "144x144",
           "type": "image/png"
         },
         {
-          "src": "images/xxxhdpi.png",
+          "src": "images/dino-xxxhdpi.png",
           "sizes": "192x192",
           "type": "image/png"
         },
         {
-          "src": "images/GooglePlayStore.png",
+          "src": "images/dino-512.png",
           "sizes": "512x512",
           "type": "image/png"
         }
