@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Emiels Github Page</title>
+    <title>Emiel's Github Page</title>
     <meta name="theme-color" content="#2196f3" />
     <link rel="manifest" href="manifest.json" />
-    <link rel="icon" href="images/xxhdpi.png" sizes="192x192" />
+    <link rel="icon" href="images/xxxhdpi.png" sizes="192x192" />
 
     <script>
         window.onload = function () {
             if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('/sw.js');
+                navigator.serviceWorker.register('/sw.js')
+                    .then(() => console.log('Service worker registration complete!'));
             }
-        }    
+        }
     </script>
 </head>
+
 <body>
     Hello World!
 </body>
