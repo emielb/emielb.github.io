@@ -16,3 +16,16 @@ self.addEventListener('install', (event) => {
     );
     console.log('Service worker has been installed!')
 });
+
+self.addEventListener('fetch', (event) => {
+    event.respondWith(
+        caches.match(event.request).then((cachedResp) => {
+            return cachedResp || fetch(event.request).then((response) => {
+                return caches.open('v1').then((cache) => {
+                    cache.put(event.request, response.clone());
+                    return response;
+                });
+            });
+        }),
+    );
+});
