@@ -10,7 +10,9 @@ self.addEventListener('install', (event) => {
                 './images/xxxhdpi.png',
                 './index.html',
             ]);
-        }).then(() => console.log('Cache set up!')),
+        })
+            .then(() => console.log('Cache set up!'))
+            .catch((err) => console.error('Caching failed:', err)),
     );
     console.log('Service worker has been installed!')
 });
