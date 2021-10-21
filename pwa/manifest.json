@@ -2,8 +2,8 @@
     "name": "Emiel's Github PWA Demo",
     "short_name": "Emiel@GH PWA",
     "start_url": "./index.html",
-    "theme_color": "forrestgreen",
-    "background_color": "honeydew",
+    "theme_color": "#228b22",
+    "background_color": "#f0fff0",
     "display": "standalone",
     "icons": [
         {
